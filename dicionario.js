@@ -117,3 +117,64 @@ let booleanLogicoDois = false
 console.log(booleanLogicoUm && booleanLogicoDois) // AND
 console.log(booleanLogicoUm || booleanLogicoDois) // OR
 console.log(!booleanLogicoDois) // NOT
+
+console.log('\n------ IF/ELSE ------\n')
+
+let numeroCondicional = 1
+
+if (numeroCondicional > 1 ) {
+	console.log("Maior que um")
+} else if (numeroCondicional === 1) {
+	console.log("O numero 1")
+} else {
+	console.log("Menor do que 1")
+}
+
+console.log('\n------ SWITCH/CASE ------\n')
+
+let numeroSwich = 1
+
+switch (numeroSwich){
+	case 1:
+		console.log("Caso Numero 1")
+		break
+	case 2:
+		console.log("Caso Numero 2")
+		break
+	case 3:
+		console.log("Caso Numero 3")
+		break
+	default:
+		console.log("Nem um caso conhecido")
+}
+
+console.log('\n------ FOR ------\n')
+
+for ( i = 0; i <= 10; i++){
+	console.log("Numero" , i)
+}
+
+let arrayFor = ["item 1", "item 2", ]
+
+for (let key in arrayFor){
+	console.log(key, arrayFor[key])
+}
+
+for (let key of arrayFor){
+	console.log(key)
+}
+
+console.log('\n------ WHILE ------\n')
+
+let iDoWhile = 1
+
+ while (iDoWhile <= 10){ // verifica antes de executar
+ 	console.log("Numero", iDoWhile)
+ 	iDoWhile++
+ }
+
+let iDo = 1
+do { // executa antes de verificar
+	console.log("Numero do Do", iDo)
+	iDo++
+} while (iDo <= 10)
